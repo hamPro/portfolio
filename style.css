@@ -108,11 +108,12 @@ p {
   background-color: transparent;
   color: var(--color-white);
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
   background-color: var(--color-pink);
-  padding: 8px 16px;
+  padding: 4px 16px;
 }
 
 .navbar__menu {
