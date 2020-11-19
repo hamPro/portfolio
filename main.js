@@ -32,3 +32,14 @@ function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({behavior: "smooth"});
 }
+
+//
+
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', ()=> {
+  let scrollPercent = (homeHeight - window.scrollY) / homeHeight;
+  if(scrollPercent >= 0){
+    home.style.opacity = scrollPercent ;
+  }
+})
