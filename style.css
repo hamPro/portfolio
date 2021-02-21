@@ -314,9 +314,16 @@ p {
   padding: 20px;
 }
 
+.tools ul,
+.etc ul{
+  padding-left: 20px;
+  text-align: left;
+}
+
 .tools__list li,
 .etc__list li{
   padding: 1px 0px;
+  list-style: square;
 }
 
 /* Work */
